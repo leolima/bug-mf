@@ -18,6 +18,11 @@ module.exports = {
       );
     }
 
-    return config;
+    return {
+      ...config,
+      output: {
+        publicPath: 'http://localhost:3001/calc/',
+      },
+    };
   },
 };
