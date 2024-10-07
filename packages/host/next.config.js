@@ -14,6 +14,7 @@ module.exports = {
             './Hello': './src/components/hello/index.jsx',
           },
           shared: {},
+          getPublicPath: `function() {return "http://localhost:3000/v2/"}`,
         }),
       );
     }

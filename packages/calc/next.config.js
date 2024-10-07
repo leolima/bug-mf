@@ -14,6 +14,7 @@ module.exports = {
           },
           exposes: {},
           shared: {},
+          getPublicPath: `function() {return "http://localhost:3000/calc/"}`,
         }),
       );
     }
