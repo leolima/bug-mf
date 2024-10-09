@@ -4,6 +4,8 @@ const path = require('path');
 module.exports = {
   basePath: '/calc',
   webpack(config, options) {
+    config.output.publicPath = 'auto'
+    
     if (!options.isServer) {
       config.plugins.push(
         new NextFederationPlugin({
